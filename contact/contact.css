@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header{
+    margin-top: -1.5rem;
+}
+
+.imgcontent{
+    width: 50vw;
+    height: 38vw;
+    margin-top: 40px;
+}
+.imgcontent>img{
+    height:100%;
+    width:100%;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+  }
+  
+  @keyframes floating {
+    0%{
+      transform: translate(0px,0px);
+    }
+    15%{
+      transform: rotate(-3deg);
+    }
+    25%{
+      transform: translate(0,20px);
+      
+    }
+    50%{
+      transform:translateX(0,40px);
+    }
+    75%{
+      transform:translateY(0,20px);
+      transform: rotate(2deg);
+    }
+  }
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mainwrap
+{
+    display: flex;
+    justify-content: center;
+    height:auto;
+}
+.lefttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    width:85%;
+    height:20rem;
+    justify-content: space-between;
+    /* margin-top:6.5rem; */
+    /* gap:3rem; */
+}
+.wrapper>p{
+    font-size: 1.1rem;
+}
+.wrapper>h3{
+    font-size: 6vw;
+    margin-bottom: 4rem;
+}
+.wrapper>h3+p+p{
+    margin-top:2rem;
+}
+
+.imgcontmain{
+    text-align: center;
+}
+.imgcont{
+    margin-top:2rem;
+    height:20vh;
+    width:100vw;
+  }
+  .imgcont>img{
+    height:60%;
+    width:80%;
+    opacity: 0.8;
+  }
+
+.maincont>p{
+    /* margin:0 2rem;
+    margin-left:3.4rem; */
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.flexing{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 30px;;
+}
+.maincont{
+    width:70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    height:3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:630px) and (max-width:886px) {
+    .wrapper{
+        margin-top: 0px;
+    }
+    .lefttext{
+        height:66vh;
+    }
+
+    .mainwrap{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-width:425px) and (max-width:630px) {
+    .lefttext{
+        height:80vh;
+    }
+    .mainwrap{
+        flex-direction: column;
+        text-align: center;
+        gap:10vh;
+    }
+}
+@media (max-width:425px){
+    .wrapper>h3{
+        font-size: 2.6rem;
+    }
+    .wrapper>p{
+        font-size: 1rem;
+    }
+    .imgcontent{
+        width:52vw;
+        height:55vw;
+    }
+    .mainwrap{
+        flex-direction: column;
+        text-align: center;
+        gap:20vh;
+    }
+
+}
+
