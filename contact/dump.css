@@ -1,0 +1,365 @@
+#special{
+    width:100%;
+
+}
+.outerflex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainspcl{
+  display: inline-block;
+  width: 60%;
+  max-width:60%;
+}
+
+
+
+
+
+footer{
+    height:3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* special-css */
+/* html, body {
+    height: 95%;
+  } */
+  
+  /* body {
+    background: linear-gradient(135deg, #000111 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .illustration-editor {
+    /* margin-top: -2rem;
+    margin-right: -10rem; */
+    display: grid;
+    grid-template-rows: 4% 96%;
+    justify-items: start;
+    position: relative;
+    height:38.7rem;
+  }
+  
+  .code {
+    position: absolute;
+    width: 400px;
+    height: 170px;
+    background: #1D1E22;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    z-index: 5;
+  }
+
+    
+  header {
+    display: grid;
+    grid-template-columns: 36px auto 36px;
+    align-items: center;
+  }
+  svg {
+    margin: 10px;
+  }
+  h1 {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.57px;
+    color: #C5C8D4;
+    margin: 0;
+  }
+    .code-html {
+      top:2rem;
+      left:-7rem;
+      
+    }
+    .code-css {
+      top:14.7rem;
+      left:3rem;
+    }
+    .code-js {
+      top:27.6rem;
+      left:-6rem;
+    }
+    .code-content 
+    {
+      margin: 0 10px 10px;
+      margin-bottom: 0;
+      color: white;
+    }
+      .c-r { color: #A88038 }
+      .c-o { color: #DE7300 }
+      .c-y { color: #E1CA72 }
+      .c-g { color: #74B087 }
+      .c-p { color: #9F8198 }
+      .c-b { color: #7A99AD }
+      .c-c { color: #666666 }
+        /* .line {
+          @for $i from 1 through 5 {
+            &-#{$i} {
+              width: 0%;
+              margin: 0;
+              border-right: .15em solid transparent;
+              overflow: hidden;
+              display: inline-block;
+              white-space: nowrap;
+            }
+          }
+          @for $i from 1 through 4 {
+            &-#{$i} {
+              animation:
+                typing-#{$i} 3s unquote((($i - 1) * 3) + 's') steps(30, end) forwards,
+                cursor 1s linear unquote((($i - 1) * 3) + 's') 3;
+            }
+          }
+          &-1, &-3, &-4 {
+            animation-duration: 1s;
+            animation-timing-function: steps(10, end);
+          }
+          &-5 {
+            border-color: transparent;
+            animation:
+              typing-5 3s 12s steps(30, end) forwards,
+              cursor-persist 1s linear 12s infinite;
+          }
+          &-2 {
+            margin-left: 2rem;
+          }
+          &-3, &-4, &-5 {
+            margin-left: 4rem;
+          }
+        }
+      }
+    } */
+  
+  .editor-block {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* margin-left:10%; */
+    height: 100%;
+    background: linear-gradient(109.61deg, rgb(76, 79, 90) 4.26%, rgb(32, 33, 37) 84.84%);
+    border-radius: 10px;
+  }
+  
+  @keyframes typing-1 {
+    from { width: 0 }
+    to { width: 60px }
+  }
+  @keyframes typing-2 {
+    from { width: 0 }
+    to { width: 220px }
+  }
+  @keyframes typing-3 {
+    from { width: 0 }
+    to { width: 70px }
+  }
+  @keyframes typing-4 {
+    from { width: 0 }
+    to { width: 75px }
+  }
+  @keyframes typing-5 {
+    from { width: 0 }
+    to { width: 141px }
+  }
+  
+  
+  @keyframes cursor {
+    from, to, 20%, 80% { border-color: transparent }
+    25%, 75% { border-color: white }
+  }
+  
+  @keyframes cursor-persist {
+    from, 45% { border-color: transparent }
+    50%, to { border-color: white }
+  }
+
+
+
+
+
+
+
+  @media (max-width:1024px)
+  {
+    .code {
+      width: 370px;
+      height: 150px;
+      font-size: 14px;
+    }
+
+    .code-html {
+      top:2.2rem;
+      left:-7rem;
+      
+    }
+    .code-css {
+      top:13rem;
+      left:3rem;
+    }
+    .code-js {
+      top:24rem;
+      left:-6rem;
+    }
+
+    .illustration-editor {
+      /* margin-top: -2rem;
+      margin-right: -10rem; */
+      display: grid;
+      grid-template-rows: 4% 96%;
+      height:34rem;
+    }
+    .mainspcl{
+      display: inline-block;
+      width: 70%;
+      max-width:70%;
+      margin-left: 30px;
+    }
+
+  }
+
+  @media (max-width:769px)
+  {
+    .wrapper>p{
+      font-size:1rem;
+    }
+    .code {
+      width: 300px;
+      height: 125px;
+      font-size: 11px;
+    }
+
+    .code-html {
+      top:1.7rem;
+      left:-6rem;
+      
+    }
+    .code-css {
+      top:11rem;
+      left:3rem;
+    }
+    .code-js {
+      top:19.8rem;
+      left:-6rem;
+    }
+
+    .illustration-editor {
+      /* margin-top: -2rem;
+      margin-right: -10rem; */
+      display: grid;
+      grid-template-rows: 4% 96%;
+      height:28rem;
+    }
+    .mainspcl{
+      display: inline-block;
+      width: 75%;
+      max-width:75%;
+      margin-left:70px;
+    }
+
+  }
+
+  @media (max-width:533px)
+  {
+    .wrapper>p{
+      font-size:1rem;
+      text-align: justify;
+    }
+    .code {
+      width: 220px;
+      height: 90px;
+      font-size: 6.7px;
+    }
+
+    .code-html {
+      top:1.4rem;
+      left:-3rem;
+      
+    }
+    .code-css {
+      top:7.5rem;
+      left:3rem;
+    }
+    .code-js {
+      top:13.5rem;
+      left:-3.6rem;
+    }
+
+    .illustration-editor {
+      /* margin-top: -2rem;
+      margin-right: -10rem; */
+      display: grid;
+      grid-template-rows: 4% 96%;
+      height:19.8rem;
+    }
+    .mainspcl{
+      display: inline-block;
+      width: 80%;
+      max-width:80%;
+      margin-left:60px;
+    }
+
+    .maincont>p{
+      font-size: 1rem;
+      text-align: center;
+  }
+
+  }
+
+
+  @media (max-width:340px)
+  {
+    .code {
+      width: 220px;
+      height: 85px;
+      font-size: 6.5px;
+    }
+
+    .code-html {
+      top:1.1rem;
+      left:-2.5rem;
+      
+    }
+    .code-css {
+      top:6.8rem;
+      left:1rem;
+    }
+    .code-js {
+      top:12.5rem;
+      left:-2.7rem;
+    }
+
+    .illustration-editor {
+      /* margin-top: -2rem;
+      margin-right: -10rem; */
+      display: grid;
+      grid-template-rows: 4% 96%;
+      height:18.2rem;
+    }
+    .mainspcl{
+      display: inline-block;
+      width: 82%;
+      max-width:82%;
+      margin-left:44px;
+    }
+    .mainwrap{
+      gap:25vh;
+  }
+
+  }
+
+  /*
+  
+  */
