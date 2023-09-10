@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* #header{
+    margin-top: -1.5rem;
+} */
+
+.imgcontent{
+    /* width: 50vw;
+    height: 38vw; */
+    margin-top: 100px;
+    width:100%;
+    text-align: center;
+}
+.imgcontent>img{
+    height:100%;
+    width:100%;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+  }
+  
+  @keyframes floating {
+    0%{
+      transform: translate(0px,0px);
+    }
+    15%{
+      transform: rotate(-3deg);
+    }
+    25%{
+      transform: translate(0,20px);
+      
+    }
+    50%{
+      transform:translateX(0,40px);
+    }
+    75%{
+      transform:translateY(0,20px);
+      transform: rotate(2deg);
+    }
+  }
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mainwrap
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+.lefttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    width:85%;
+    height:20rem;
+    justify-content: space-between;
+    /* margin-top:6.5rem; */
+    /* gap:3rem; */
+}
+.wrapper>p{
+    font-size: 1.1rem;
+}
+.wrapper>h3{
+    font-size: 6vw;
+    margin-bottom: 4rem;
+}
+.wrapper>h3+p+p{
+    margin-top:2rem;
+}
+
+.imgcontmain{
+    text-align: center;
+}
+.imgcont{
+    margin-top:2rem;
+    height:20vh;
+    width:100vw;
+  }
+  .imgcont>img{
+    height:60%;
+    width:80%;
+    opacity: 0.8;
+  }
+
+.maincont>p{
+    /* margin:0 2rem;
+    margin-left:3.4rem; */
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.flexing{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 30px;;
+}
+.maincont{
+    width:70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    height:3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet positioning*/
+@media (min-width:630px) and (max-width:886px) {
+    .wrapper{
+        margin-top: 0px;
+    }
+    /* .lefttext{
+        height:60vh;
+    } */
+
+    .mainwrap{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 40%;
+        text-align: center;
+    }
+    #svg{
+        width:70%;
+        height:70%;
+    }
+
+    .code {
+        width: 370px;
+        height: 150px;
+        font-size: 12px;
+      }
+  
+      .code-html {
+        top:2.2rem;
+        left:-7rem;
+        
+      }
+      .code-css {
+        top:13rem;
+        left:3rem;
+      }
+      .code-js {
+        top:24rem;
+        left:-6rem;
+      }
+  
+      .illustration-editor {
+        display: grid;
+        grid-template-rows: 4% 96%;
+        height:34rem;
+      }
+      .mainspcl{
+        display: inline-block;
+        width: 70%;
+        max-width:70%;
+        margin-left: 30px;
+      }
+      strong{
+        font-size: 10px;
+      }
+      .gmail{
+        font-size: 10px;
+      }
+}
+
+/*large phone positioning*/
+@media (min-width:461px) and (max-width:630px) {
+    /* .lefttext{
+        height:80vh;
+    } */
+    .mainwrap{
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 50%;
+        text-align: center;
+    }
+    #svg{
+        width:70%;
+        height:70%;
+    }
+    .imgcontent{
+        margin-top: 0px;
+    }
+    /* #svg{
+        height:100%;
+        width:100%;
+    } */
+}
+
+
+@media (min-width:425px) and (max-width:461px) {
+    /* .lefttext{
+        height:80vh;
+    } */
+    .mainwrap{
+        grid-template-columns: 100%;
+        grid-template-rows: 69% 50%;
+        text-align: center;
+    }
+    #svg{
+        width:100%;
+        height:100%;
+    }
+    .imgcontent{
+        margin-top: 0px;
+    }
+    /* #svg{
+        height:100%;
+        width:100%;
+    } */
+}
+/*small phone positioning*/
+@media (max-width:425px){
+    .wrapper>h3{
+        font-size: 2.6rem;
+    }
+    .wrapper>p{
+        font-size: 1rem;
+    }
+    #svg{
+        width:100%;
+        height:100%;
+    }
+    .mainwrap{
+        grid-template-columns: 100%;
+        grid-template-rows: 65% 37%;
+        gap:1.4rem;
+    }
+    .imgcontmain{
+        margin-top: 80px;
+    }
+
+}
+
